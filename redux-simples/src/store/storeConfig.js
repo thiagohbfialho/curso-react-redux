@@ -2,6 +2,7 @@ import {createStore, combineReducers} from 'redux'
 
 const reducers = combineReducers({
     numeros: function (state, action) {
+        console.log("Reducers de numeros")
         console.log(state, '',action)
         return{
             min: 7,
@@ -9,7 +10,8 @@ const reducers = combineReducers({
         }
     },
     nomes: function(state, action){
-        // console.log(state, '',action)
+        console.log("Reducers de nomes")
+        console.log(state, '',action)
         return [
             'Ana',
             'Bia',
